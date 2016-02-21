@@ -396,7 +396,6 @@ figcaption {
         background-image: url(images/bg-portrait.jpg);
     }
 }
-
 @media screen and (min-width: 1201px) {
     .display {
         width: 23%;
