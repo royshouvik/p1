@@ -255,8 +255,8 @@ ul.social {
     background-image: url(images/bg.jpg);
     overflow: hidden;
     background-attachment: fixed;
-    background-clip: border-box;
-    background-size: cover;
+    /*background-clip: border-box;*/
+    background-size: contain;
     background-position: center center;
     box-shadow: inset 0 0 48px 0 rgba(0, 0, 0, 0.7), 0 0 48px 10px rgba(0, 0, 0, 0.7);
     width: 100%;
