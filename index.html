@@ -9,15 +9,15 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="genericons/genericons/genericons.css">
-
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,500,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/jquery.fullpage.css" />
     <link rel="stylesheet" href="css/skeleton.css">
     <link rel="stylesheet" href="css/style2.css">
 </head>
 
 <body>
-<a class="toggle" href="#"><span class="genericon genericon-menu"></span></i></a>
+    <a class="toggle" href="#"><span class="genericon genericon-menu"></span></i></a>
     <nav class="navbar">
         <header class="info">
             <div class="logo">
@@ -52,15 +52,13 @@
         </footer>
     </nav>
     <main id="fullpage" class="main">
-
-
         <div class="background-image"></div>
         <section class="section">
-	        <div class="intro">
-	        	<h1 class="shadow">Hi! I am Shouvik Roy</h1>
-	            <h2 class="shadow">I am a Front End developer specializing in client side frameworks.</h2>
-	            <a class="resume-button" href="#">View My Resume</a>
-	        </div>
+            <div class="intro">
+                <h1 class="shadow">Hi! I am Shouvik Roy</h1>
+                <h2 class="shadow">I am a Front End developer specializing in client side frameworks.</h2>
+                <a class="resume-button" href="#">View My Resume</a>
+            </div>
         </section>
         <section class="portfolio section fp-auto-height">
             <h1>Portfolio</h1>
@@ -92,26 +90,47 @@
             </div>
         </section>
         <section class="section">
-	        <div class="about">
-	        	<h1>About Me</h1>
-	        </div>
+            <div class="about">
+                <h1>About Me</h1>
+                <p class="about-me">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquet, arcu ac sagittis rutrum, metus augue ornare velit, non tristique odio ante non augue. Nullam sed commodo lectus. Proin hendrerit arcu vitae diam tempus, nec dignissim neque semper. Pellentesque vel nibh interdum, euismod lectus nec, accumsan nisl. Pellentesque elementum mi dolor, a congue neque molestie et. Curabitur viverra turpis vel diam condimentum tincidunt. </p>
+            </div>
         </section>
         <section class="section">
-        <div class="contact">
-        	<h1>Contact</h1>
-
-        </div>
+            <div class="contact">
+                <h1>Contact</h1>
+                <div class="container">
+                <form>
+                    <div class="row">
+                        <div class="six columns">
+                            <label for="exampleEmailInput">Your email</label>
+                            <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
+                        </div>
+                        <div class="six columns">
+                            <label for="exampleRecipientInput">Reason for contacting</label>
+                            <select class="u-full-width" id="exampleRecipientInput">
+                                <option value="Option 1">Questions</option>
+                                <option value="Option 2">Admiration</option>
+                                <option value="Option 3">Can I get your number?</option>
+                            </select>
+                        </div>
+                    </div>
+                    <label for="exampleMessage">Message</label>
+                    <textarea class="u-full-width" placeholder="Hi Shouvik …" id="exampleMessage"></textarea>
+                    <label class="example-send-yourself-copy">
+                        <input type="checkbox">
+                        <span class="label-body">Send a copy to yourself</span>
+                    </label>
+                    <input class="button-primary" type="submit" value="Submit">
+                </form>
+                </div>
+            </div>
         </section>
         <section class="section fp-auto-height">
-			<footer class="footer">
+            <footer class="footer">
                 <p class="copy u-full-width">© Shouvik Roy. All rights reserved</p>
-			</footer>
-
-
+            </footer>
         </section>
-
     </main>
-
     <script src="script/jquery.min.js"></script>
     <script src="script/jquery.easings.js"></script>
     <script src="script/jquery.fullpage.min.js"></script>
