@@ -23,25 +23,33 @@ h2 {
     text-align: center;
 }
 
+.outline {
+    position: fixed;
+    left: 25000px;
+}
+
 .resume-button {
     width: 160px;
     font-size: 1.2em;
     text-decoration: none;
-    color: #ffffff;
-    background-color: hsla(177, 85%, 45%, 0.9);
+    color: #fff;
+    background-color: #33C3F0;
+    background-color: hsla(194, 86%, 57%, 0.9);
     display: block;
     text-align: center;
     margin: 7.70% auto;
     padding: 30px;
     border-radius: 10px;
     transition: 0.3s;
+    text-transform: uppercase;
     text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .resume-button:hover {
-    color: #ffffff;
-    background-color: #77cccc;
-    box-shadow: 0px 0px 30px 2px rgba(188, 230, 230, 0.7);
+    color: #fff;
+    background-color: #33C3F0;
+    background-color: hsla(194, 86%, 57%, 1);
+    box-shadow: 0 0 30px 2px rgba(188, 230, 230, 0.7);
     -webkit-transform: scale(1.1, 1.1);
     transform: scale(1.1, 1.1);
 }
@@ -67,6 +75,7 @@ nav {
     -ms-flex-pack: center;
     justify-content: space-around;
     align-items: stretch;
+    z-index: 2;
 }
 
 .display {
@@ -80,7 +89,7 @@ nav {
     background-color: rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     font-size: 32px;
-    color: #ffffff;
+    color: #fff;
     display: none;
     position: fixed;
     top: 6%;
@@ -90,7 +99,7 @@ nav {
 }
 
 .toggle:hover {
-    color: #ffffff;
+    color: #fff;
 }
 
 .toggle span {
@@ -125,16 +134,16 @@ ul.nav {
 }
 
 ul.nav li a:hover {
-    color: #ffffff;
+    color: #fff;
 }
 
 li.active {
-    color: #ffffff;
+    color: #fff;
     box-shadow: inset -5px -2px 38px 3px rgba(0, 0, 0, 0.7);
 }
 
 ul.nav li.active a {
-    color: #ffffff;
+    color: #fff;
 }
 
 i.fa {
@@ -150,6 +159,8 @@ i.fa {
 
 ul.social {
     font-size: 1.4em;
+    margin: 50% auto;
+    width: 80%;
 }
 
 li a span {
@@ -169,6 +180,13 @@ li a span {
     clear: both;
 }
 
+nav footer {
+    height: 30%;
+}
+
+
+/*************************** End Nav **********************************/
+
 .main {
     width: 77%;
     margin-left: auto;
@@ -182,6 +200,7 @@ li a span {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
+    align-items: flex-end;
 }
 
 .name {
@@ -204,7 +223,6 @@ li a span {
     -ms-flex-direction: column;
     flex-direction: column;
     width: 80%;
-    margin-top: 5%;
     -webkit-order: 2;
     -ms-flex-order: 2;
     order: 2;
@@ -213,7 +231,7 @@ li a span {
 .logo {
     font-size: 2.2em;
     font-weight: 300;
-    border: 2px solid #ffffff;
+    border: 2px solid #fff;
     min-width: 50px;
     width: 50px;
     height: 50px;
@@ -239,12 +257,7 @@ ul.social li a {
 }
 
 ul.social li a:hover {
-    color: #ffffff;
-}
-
-ul.social {
-    margin: 0 auto;
-    width: 80%;
+    color: #fff;
 }
 
 .background-image {
@@ -259,7 +272,7 @@ ul.social {
     /*background-clip: border-box;*/
     background-size: 100% 100%;
     background-position: center center;
-    box-shadow: inset 0 0 48px 0 rgba(0, 0, 0, 0.7), 0 0 48px 10px rgba(0, 0, 0, 0.7);
+    box-shadow: -5px 0 1px 0 rgba(0, 0, 0, 0.7);
     width: 100%;
     height: 20%;
     -webkit-filter: blur(4px);
@@ -269,7 +282,7 @@ ul.social {
 .intro {
     height: 40%;
     z-index: 9999;
-    color: #ffffff;
+    color: #fff;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -307,14 +320,14 @@ section:nth-of-type(4) {
 }
 
 .contact {
-    background: #ffffff url(images/white_texture.png) top left repeat;
+    background: #fff url(images/white_texture.png) top left repeat;
     background-attachment: fixed;
 }
 
 .footer {
     height: 150px;
     border-top: 1px solid #a0a0a0;
-    background: #ffffff url(images/whitey.png) top left repeat;
+    background: #fff url(images/whitey.png) top left repeat;
 }
 
 .portfolio div {
@@ -354,7 +367,7 @@ figure {
     -ms-flex-preferred-size: 30%;
     -webkit-flex-basis: 30%;
     flex-basis: 30%;
-    background-color: #ffffff;
+    background-color: #fff;
     /*margin: 4% 0;*/
     transition: 0.4s;
 }
@@ -365,6 +378,7 @@ figure:hover {
 }
 
 figcaption {
+    font-family: "lato", sans-serif;
     border: 1px solid #a7a7a7;
     border-top: none;
     padding: 10% 5%;
@@ -376,6 +390,14 @@ figcaption {
 .copy {
     text-align: center;
     margin-top: 2.5rem;
+}
+
+.about-me {
+    font-family: "lato", sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    width: 80%;
+    margin: 10px auto;
 }
 
 
@@ -396,19 +418,10 @@ figcaption {
         background-image: url(images/bg-portrait.jpg);
     }
 }
+
 @media screen and (min-width: 1201px) {
     .display {
         width: 23%;
-    }
-}
-
-@media screen and (max-width: 995px) {
-    .display,
-    nav {
-        width: 25%;
-    }
-    .main {
-        width: 75%;
     }
 }
 
@@ -463,7 +476,17 @@ figcaption {
         flex-basis: 45%;
     }
     .resume-button {
-        width: 205px;
+        width: 225px;
+    }
+}
+
+@media screen and (max-width: 995px) {
+    .display,
+    nav {
+        width: 25%;
+    }
+    .main {
+        width: 75%;
     }
 }
 
@@ -472,10 +495,10 @@ figcaption {
         font-size: 14px;
     }
     nav {
-        left: -30%;
+        left: -35%;
     }
     .display {
-        width: 30%;
+        width: 35%;
     }
     .main {
         width: 100%;
@@ -485,7 +508,7 @@ figcaption {
         width: 99.5%;
     }
     .move-right {
-        left: 30%;
+        left: 35%;
     }
     figure {
         -ms-flex-preferred-size: 80%;
@@ -522,11 +545,7 @@ figcaption {
     }
 }
 
-@media screen and (max-width: 620px),
-screen and (max-height: 500px) {
-    .info {
-        margin: 1% 10%;
-    }
+@media (max-width: 750px) {
     .display {
         width: 50%;
     }
@@ -534,28 +553,35 @@ screen and (max-height: 500px) {
     .move-right:hover {
         left: 50%;
     }
+}
+
+@media screen and (max-width: 620px),
+screen and (max-height: 500px) {
+    .info {
+        margin: 1% 10%;
+    }
     .name {
         font-size: 1em;
         text-align: center;
     }
     .role {
         font-size: 0.8em;
-        color: #ffffff;
+        color: #fff;
         text-align: center;
     }
     .logo {
         width: 35px;
         min-width: 35px;
         height: 35px;
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
     .logo span {
         padding-top: 0;
         padding-left: 10px;
     }
-    ul.social li {
+    /* ul.social li {
         margin: 2%;
-    }
+    }*/
 }
 
 @media screen and (max-width: 480px) {
@@ -569,6 +595,6 @@ screen and (max-height: 500px) {
     ul.nav li a,
     ul.social,
     i.fa {
-        font-size: 1em;
+        font-size: 1.2em;
     }
 }
