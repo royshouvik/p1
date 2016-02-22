@@ -22,6 +22,10 @@ h2 {
     letter-spacing: 0.1rem;
     text-align: center;
 }
+.outline {
+    position: fixed;
+    left: 25000px;
+}
 
 .resume-button {
     width: 160px;
