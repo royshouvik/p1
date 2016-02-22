@@ -46,7 +46,9 @@ h2 {
     transform: scale(1.1, 1.1);
 }
 
+
 /*************************** Nav **********************************/
+
 nav {
     height: 100%;
     width: 23%;
@@ -74,7 +76,6 @@ nav {
 }
 
 .toggle {
-
     text-decoration: none;
     background-color: rgba(0, 0, 0, 0.2);
     border-radius: 5px;
@@ -87,6 +88,7 @@ nav {
     transition: position 0.6s, left 0.6s;
     z-index: 99999;
 }
+
 .toggle:hover {
     color: #ffffff;
 }
@@ -223,7 +225,6 @@ li a span {
 
 .logo span {
     display: inline-block;
-
     padding-left: 14px;
 }
 
@@ -255,12 +256,12 @@ ul.social {
     background-image: url(images/bg.jpg);
     overflow: hidden;
     background-attachment: fixed;
-    background-clip: border-box;
-    background-size: cover;
-    background-position: top left;
+    /*background-clip: border-box;*/
+    background-size: 100% 100%;
+    background-position: center center;
     box-shadow: inset 0 0 48px 0 rgba(0, 0, 0, 0.7), 0 0 48px 10px rgba(0, 0, 0, 0.7);
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 20%;
     -webkit-filter: blur(4px);
     filter: blur(4px);
 }
@@ -290,19 +291,21 @@ ul.social {
 
 .portfolio {
     background-color: #f9f9f9;
-
 }
 
 .about {
     background-color: #f0f0f0;
     border-bottom: 1px solid #d0d0d0;
 }
+
 section:nth-of-type(1n+2) {
     background-color: #fff;
 }
+
 section:nth-of-type(4) {
     background-color: #f0f0f0;
 }
+
 .contact {
     background: #ffffff url(images/white_texture.png) top left repeat;
     background-attachment: fixed;
@@ -375,18 +378,24 @@ figcaption {
     margin-top: 2.5rem;
 }
 
+
 /****************************** SVG ***************************************/
 
-.move-right, .move-right:hover {
+.move-right,
+.move-right:hover {
     left: 30%;
     color: #333;
     background-color: transparent;
 }
 
 
-
 /****************************** Media Queries *****************************/
 
+@media screen and (orientation: portrait) {
+    .background-image {
+        background-image: url(images/bg-portrait.jpg);
+    }
+}
 @media screen and (min-width: 1201px) {
     .display {
         width: 23%;
@@ -394,17 +403,14 @@ figcaption {
 }
 
 @media screen and (max-width: 995px) {
-
-    .display, nav {
+    .display,
+    nav {
         width: 25%;
     }
-
     .main {
         width: 75%;
     }
-
 }
-
 
 @media screen and (max-width: 1200px) {
     .display {
@@ -456,14 +462,13 @@ figcaption {
         -webkit-flex-basis: 45%;
         flex-basis: 45%;
     }
-
     .resume-button {
         width: 205px;
     }
 }
 
 @media screen and (max-width: 960px) {
-	html {
+    html {
         font-size: 14px;
     }
     nav {
@@ -479,11 +484,9 @@ figcaption {
         left: 0%;
         width: 99.5%;
     }
-
     .move-right {
         left: 30%;
     }
-
     figure {
         -ms-flex-preferred-size: 80%;
         -webkit-flex-basis: 80%;
@@ -499,7 +502,8 @@ figcaption {
         height: 40px;
         text-align: center;
     }
-    .name, .role {
+    .name,
+    .role {
         text-align: center;
     }
     .name {
@@ -511,60 +515,60 @@ figcaption {
     .logo {
         font-size: 1.5em;
     }
-
-    ul.nav li a, ul.social, i.fa {
+    ul.nav li a,
+    ul.social,
+    i.fa {
         font-size: 1.2em;
     }
-
 }
 
-@media screen and (max-width: 620px) , screen and (max-height: 500px){
-	.info {
-		margin : 1% 10%;
-	}
+@media screen and (max-width: 620px),
+screen and (max-height: 500px) {
+    .info {
+        margin: 1% 10%;
+    }
     .display {
         width: 50%;
     }
-    .move-right, .move-right:hover {
+    .move-right,
+    .move-right:hover {
         left: 50%;
     }
     .name {
-    	font-size: 1em;
-    	text-align: center;
+        font-size: 1em;
+        text-align: center;
     }
     .role {
         font-size: 0.8em;
         color: #ffffff;
         text-align: center;
     }
-
-	.logo {
-		width: 35px;
-		min-width: 35px;
-		height: 35px;
-		font-size: 1.2em;
-	}
-	.logo span {
-	    padding-top: 0;
+    .logo {
+        width: 35px;
+        min-width: 35px;
+        height: 35px;
+        font-size: 1.2em;
+    }
+    .logo span {
+        padding-top: 0;
         padding-left: 10px;
-	}
-
-	ul.social li {
-		margin : 2%;
-	}
-
+    }
+    ul.social li {
+        margin: 2%;
+    }
 }
-@media screen and (max-width: 480px) {
 
+@media screen and (max-width: 480px) {
     .display {
         width: 70%;
     }
-    .move-right, .move-right:hover {
+    .move-right,
+    .move-right:hover {
         left: 70%;
     }
-
-    ul.nav li a, ul.social, i.fa {
+    ul.nav li a,
+    ul.social,
+    i.fa {
         font-size: 1em;
     }
-
 }
