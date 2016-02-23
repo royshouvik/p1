@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 
 <head>
     <meta charset="utf-8">
@@ -17,10 +18,10 @@
 </head>
 
 <body>
-    <h1 class="outline">Shouvik Roy's Portfolio page</h1>
+    <h2 class="outline">Shouvik Roy's Portfolio page</h2>
     <a class="toggle" href="#"><span class="genericon genericon-menu"></span></a>
     <nav class="navbar">
-        <h1 class="outline">Navigation</h1>
+        <h2 class="outline">Navigation</h2>
         <header class="info">
             <div class="logo">
                 <span>S</span>
@@ -46,10 +47,14 @@
         </ul>
         <footer>
             <ul class="social">
-                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa fa-github"></i></a></li>
-                <li><a href="#"><i class="fa fa-envelope-o"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-github"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-envelope-o"></i></a>
+                </li>
             </ul>
         </footer>
     </nav>
@@ -63,7 +68,7 @@
             </div>
         </section>
         <section class="portfolio section fp-auto-height">
-            <h1>Portfolio</h1>
+            <h2 class="heading">Portfolio</h2>
             <div>
                 <figure>
                     <img class="project" src="css/images/browser.png" alt="Project 1">
@@ -93,37 +98,37 @@
         </section>
         <section class="section">
             <div class="about">
-                <h1>About Me</h1>
+                <h2 class="heading">About Me</h2>
                 <p class="about-me">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquet, arcu ac sagittis rutrum, metus augue ornare velit, non tristique odio ante non augue. Nullam sed commodo lectus. Proin hendrerit arcu vitae diam tempus, nec dignissim neque semper. Pellentesque vel nibh interdum, euismod lectus nec, accumsan nisl. Pellentesque elementum mi dolor, a congue neque molestie et. Curabitur viverra turpis vel diam condimentum tincidunt. </p>
             </div>
         </section>
         <section class="section">
             <div class="contact">
-                <h1>Contact</h1>
+                <h2 class="heading">Contact</h2>
                 <div class="container">
-                <form>
-                    <div class="row">
-                        <div class="six columns">
-                            <label for="exampleEmailInput">Your email</label>
-                            <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
+                    <form>
+                        <div class="row">
+                            <div class="six columns">
+                                <label for="email-input">Your email</label>
+                                <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="email-input">
+                            </div>
+                            <div class="six columns">
+                                <label for="recipient-input">Reason for contacting</label>
+                                <select class="u-full-width" id="recipient-input">
+                                    <option value="Option 1">Questions</option>
+                                    <option value="Option 2">Admiration</option>
+                                    <option value="Option 3">Can I get your number?</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="six columns">
-                            <label for="exampleRecipientInput">Reason for contacting</label>
-                            <select class="u-full-width" id="exampleRecipientInput">
-                                <option value="Option 1">Questions</option>
-                                <option value="Option 2">Admiration</option>
-                                <option value="Option 3">Can I get your number?</option>
-                            </select>
-                        </div>
-                    </div>
-                    <label for="exampleMessage">Message</label>
-                    <textarea class="u-full-width" placeholder="Hi Shouvik …" id="exampleMessage"></textarea>
-                    <label class="example-send-yourself-copy">
-                        <input type="checkbox">
-                        <span class="label-body">Send a copy to yourself</span>
-                    </label>
-                    <input class="button-primary" type="submit" value="Submit">
-                </form>
+                        <label for="message">Message</label>
+                        <textarea class="u-full-width" placeholder="Hi Shouvik …" id="message"></textarea>
+                        <label class="send-yourself-copy">
+                            <input type="checkbox">
+                            <span class="label-body">Send a copy to yourself</span>
+                        </label>
+                        <input class="button-primary" type="submit" value="Submit">
+                    </form>
                 </div>
             </div>
         </section>

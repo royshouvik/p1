@@ -64,9 +64,6 @@ nav {
     background: #232323 url(images/debut_dark.png) top left repeat;
     color: white;
     transition: 0.5s;
-    /*display: -webkit-flex;*/
-    /*display: -ms-flexbox;*/
-    /*display: flex;*/
     display: block;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
@@ -74,18 +71,21 @@ nav {
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: space-around;
-    align-items: stretch;
+    -webkit-align-items: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
     z-index: 2;
 }
 
 .display {
-    left: 0%;
+    left: 0;
     width: 60%;
     z-index: 99998;
 }
 
 .toggle {
     text-decoration: none;
+    background-color: #000;
     background-color: rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     font-size: 32px;
@@ -130,7 +130,9 @@ ul.nav li a {
 }
 
 ul.nav {
-    flex-grow: 3;
+    -webkit-flex-grow: 3;
+        -ms-flex-positive: 3;
+            flex-grow: 3;
 }
 
 ul.nav li a:hover {
@@ -200,7 +202,9 @@ nav footer {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
-    align-items: flex-end;
+    -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end;
 }
 
 .name {
@@ -248,7 +252,7 @@ nav footer {
 
 ul.social li {
     display: inline;
-    margin: 5%;
+    margin-left: 10%;
 }
 
 ul.social li a {
@@ -349,12 +353,13 @@ section:nth-of-type(4) {
     height: auto;
 }
 
-.portfolio h1,
-.about h1,
-.contact h1 {
+.heading {
     text-align: center;
     padding: 8% 0 5% 0;
     text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2);
+    font-weight: 300;
+    font-size: 3.6em;
+    margin: 20px auto;
 }
 
 .project {
@@ -366,7 +371,7 @@ figure {
     display: inline-block;
     -ms-flex-preferred-size: 30%;
     -webkit-flex-basis: 30%;
-    flex-basis: 30%;
+            flex-basis: 30%;
     background-color: #fff;
     /*margin: 4% 0;*/
     transition: 0.4s;
@@ -429,6 +434,7 @@ figcaption {
     .display {
         width: 23%;
     }
+
     .info {
         -webkit-flex-direction: column;
         -ms-flex-direction: column;
@@ -439,11 +445,15 @@ figcaption {
         -webkit-align-items: center;
         -ms-flex-align: center;
         align-items: center;
-        flex-grow: 1;
+        -webkit-flex-grow: 1;
+            -ms-flex-positive: 1;
+                flex-grow: 1;
     }
+
     .logo {
         margin: 5% auto;
     }
+
     li a span {
         -webkit-flex-grow: 2;
         -ms-flex-positive: 2;
@@ -453,8 +463,9 @@ figcaption {
         -ms-flex-order: 1;
         order: 1;
     }
+
     i.fa {
-        padding-top: 0%;
+        padding-top: 0;
         -webkit-flex-grow: 0;
         -ms-flex-positive: 0;
         flex-grow: 0;
@@ -462,6 +473,7 @@ figcaption {
         -ms-flex-order: 2;
         order: 2;
     }
+
     ul.nav li a {
         -webkit-justify-content: center;
         -ms-flex-pack: center;
@@ -470,11 +482,13 @@ figcaption {
         -ms-flex-align: center;
         align-items: center;
     }
+
     figure {
         -ms-flex-preferred-size: 45%;
         -webkit-flex-basis: 45%;
-        flex-basis: 45%;
+                flex-basis: 45%;
     }
+
     .resume-button {
         width: 225px;
     }
@@ -485,6 +499,7 @@ figcaption {
     nav {
         width: 25%;
     }
+
     .main {
         width: 75%;
     }
@@ -494,50 +509,63 @@ figcaption {
     html {
         font-size: 14px;
     }
+
     nav {
         left: -35%;
     }
+
     .display {
         width: 35%;
     }
+
     .main {
         width: 100%;
     }
+
     .background-image {
-        left: 0%;
+        left: 0;
         width: 99.5%;
     }
+
     .move-right {
         left: 35%;
     }
+
     figure {
         -ms-flex-preferred-size: 80%;
         -webkit-flex-basis: 80%;
-        flex-basis: 80%;
+                flex-basis: 80%;
     }
-    h2.shadow {
+
+    .shadow {
         text-align: center;
         padding: 8% 0 5% 0;
     }
+
     .toggle {
         display: block;
         width: 50px;
         height: 40px;
         text-align: center;
     }
+
     .name,
     .role {
         text-align: center;
     }
+
     .name {
         font-size: 1.2em;
     }
+
     .role {
         font-size: 0.8em;
     }
+
     .logo {
         font-size: 1.5em;
     }
+
     ul.nav li a,
     ul.social,
     i.fa {
@@ -549,6 +577,7 @@ figcaption {
     .display {
         width: 50%;
     }
+
     .move-right,
     .move-right:hover {
         left: 50%;
@@ -560,38 +589,45 @@ screen and (max-height: 500px) {
     .info {
         margin: 1% 10%;
     }
+
     .name {
         font-size: 1em;
         text-align: center;
     }
+
     .role {
         font-size: 0.8em;
         color: #fff;
         text-align: center;
     }
+
     .logo {
         width: 35px;
         min-width: 35px;
         height: 35px;
         font-size: 1.1em;
     }
+
     .logo span {
         padding-top: 0;
         padding-left: 10px;
     }
-    /* ul.social li {
-        margin: 2%;
-    }*/
+    ul.social {
+        margin: 10% auto;
+    }
+    
 }
 
 @media screen and (max-width: 480px) {
     .display {
         width: 70%;
     }
+
     .move-right,
     .move-right:hover {
         left: 70%;
     }
+
     ul.nav li a,
     ul.social,
     i.fa {
