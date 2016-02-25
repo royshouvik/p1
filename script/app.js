@@ -13,11 +13,6 @@ $(document).ready(function() {
         }
     });
 
-    var hideNav = function() {
-        console.log("hello");
-        $("nav").removeClass("display");
-    };
-
     $(".toggle").click(function(event) {
         $("nav").toggleClass("display");
         $(".toggle span").toggleClass("genericon-menu genericon-close-alt");
