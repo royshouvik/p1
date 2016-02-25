@@ -1,3 +1,12 @@
+/**** Flex based grid ******/
+
+.parent {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+
+
 body {
     height: auto;
 }
@@ -75,6 +84,7 @@ nav {
         -ms-flex-align: stretch;
             align-items: stretch;
     z-index: 2;
+    flex-basis: 23%;
 }
 
 .display {
@@ -192,6 +202,7 @@ nav footer {
 .main {
     width: 77%;
     margin-left: auto;
+    flex-basis: 77%;
 }
 
 .info {
@@ -334,7 +345,7 @@ section:nth-of-type(4) {
     background: #fff url(images/whitey.png) top left repeat;
 }
 
-.portfolio div {
+.portfolio-container {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -520,6 +531,7 @@ figcaption {
 
     .main {
         width: 100%;
+        flex-basis: 100%;
     }
 
     .background-image {
